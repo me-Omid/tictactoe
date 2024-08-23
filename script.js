@@ -15,7 +15,7 @@ var startwith = "X"
 gamearray = ["", "", "", "", "", "", "", "", ""];
 
 box11.addEventListener("click", function(){ 
-    if(startwith == "X"){
+    if(startwith == "X" && box11.innerHTML ==""){
         box11.innerHTML="X";
         gamearray[0] = "X"
         startwith = "O"
@@ -28,7 +28,7 @@ box11.addEventListener("click", function(){
  });
 
  box12.addEventListener("click", function(){ 
-    if(startwith == "X"){
+    if(startwith == "X" && box11.innerHTML ==""){
         box12.innerHTML="X";
         gamearray[1] = "X"
         startwith = "O"
@@ -41,7 +41,7 @@ box11.addEventListener("click", function(){
  });
 
  box13.addEventListener("click", function(){ 
-    if(startwith == "X"){
+    if(startwith == "X" && box11.innerHTML ==""){
         box13.innerHTML="X";
         gamearray[2] = "X"
         startwith = "O"
@@ -54,7 +54,7 @@ box11.addEventListener("click", function(){
  });
 
  box21.addEventListener("click", function(){ 
-    if(startwith == "X"){
+    if(startwith == "X" && box11.innerHTML ==""){
         box21.innerHTML="X";
         gamearray[3] = "X"
         startwith = "O"
@@ -67,7 +67,7 @@ box11.addEventListener("click", function(){
  });
 
  box22.addEventListener("click", function(){ 
-    if(startwith == "X"){
+    if(startwith == "X" && box11.innerHTML ==""){
         box22.innerHTML="X";
         gamearray[4] = "X"
         startwith = "O"
@@ -80,7 +80,7 @@ box11.addEventListener("click", function(){
  });
 
  box23.addEventListener("click", function(){ 
-    if(startwith == "X"){
+    if(startwith == "X" && box11.innerHTML ==""){
         box23.innerHTML="X";
         gamearray[5] = "X"
         startwith = "O"
@@ -93,7 +93,7 @@ box11.addEventListener("click", function(){
  });
 
  box31.addEventListener("click", function(){ 
-    if(startwith == "X"){
+    if(startwith == "X" && box11.innerHTML ==""){
         box31.innerHTML="X";
         gamearray[6] = "X"
         startwith = "O"
@@ -130,3 +130,19 @@ box11.addEventListener("click", function(){
         startwith = "X"
     }
  });
+
+ var reload = document.getElementById("reload")
+
+ reload.addEventListener("click", function(){
+    box11.innerHTML="";
+    box12.innerHTML="";
+    box13.innerHTML="";
+
+    box21.innerHTML="";
+    box22.innerHTML="";
+    box23.innerHTML="";
+
+    box31.innerHTML="";
+    box32.innerHTML="";
+    box33.innerHTML="";
+ })
