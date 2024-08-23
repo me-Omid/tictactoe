@@ -13,17 +13,38 @@ var box32 = document.getElementById("box32")
 var box33 = document.getElementById("box33")
 var startwith = "X"
 gamearray = ["", "", "", "", "", "", "", "", ""];
+var title = document.getElementById("title");
+
+
+function check(char) {
+
+    // Horizontal
+    if(gamearray[0] == char && gamearray[1] == char && gamearray[2] == char) {title.innerHTML = char + " hat gewonnen"}
+    else if(gamearray[3] == char && gamearray[4] == char && gamearray[5] == char){window.alert(char + " hat gewonnen");}
+    else if(gamearray[6] == char && gamearray[7] == char && gamearray[8] == char){window.alert(char + " hat gewonnen");}
+    // Vertikal
+    else if(gamearray[0] == char && gamearray[3] == char && gamearray[6] == char) {window.alert(char + " hat gewonnen");}
+    else if(gamearray[1] == char && gamearray[4] == char && gamearray[7] == char){window.alert(char + " hat gewonnen");}
+    else if(gamearray[2] == char && gamearray[5] == char && gamearray[8] == char){window.alert(char + " hat gewonnen");}
+    // Diagonal
+    else if(gamearray[0] == char && gamearray[4] == char && gamearray[8] == char){window.alert(char + " hat gewonnen");}
+    else if(gamearray[2] == char && gamearray[4] == char && gamearray[6] == char){window.alert(char + " hat gewonnen");}
+
+
+}
 
 box11.addEventListener("click", function(){ 
     if(startwith == "X" && box11.innerHTML ==""){
         box11.innerHTML="X";
         gamearray[0] = "X"
         startwith = "O"
+        check("X");
     }
     else if(startwith == "O" && box11.innerHTML ==""){
         box11.innerHTML="O";
         gamearray[0] = "O"
         startwith = "X"
+        check("O")
     }
  });
 
@@ -32,11 +53,13 @@ box11.addEventListener("click", function(){
         box12.innerHTML="X";
         gamearray[1] = "X"
         startwith = "O"
+        check("X");
     }
     else if(startwith == "O" && box12.innerHTML ==""){
         box12.innerHTML="O";
         gamearray[1] = "O"
         startwith = "X"
+        check("O")
     }
  });
 
@@ -45,11 +68,13 @@ box11.addEventListener("click", function(){
         box13.innerHTML="X";
         gamearray[2] = "X"
         startwith = "O"
+        check("X");
     }
     else if(startwith == "O" && box13.innerHTML ==""){
         box13.innerHTML="O";
         gamearray[2] = "O"
         startwith = "X"
+        check("O")
     }
  });
 
@@ -58,11 +83,13 @@ box11.addEventListener("click", function(){
         box21.innerHTML="X";
         gamearray[3] = "X"
         startwith = "O"
+        check("X");
     }
     else if(startwith == "O" && box21.innerHTML ==""){
         box21.innerHTML="O";
         gamearray[3] = "O"
         startwith = "X"
+        check("O")
     }
  });
 
@@ -71,11 +98,13 @@ box11.addEventListener("click", function(){
         box22.innerHTML="X";
         gamearray[4] = "X"
         startwith = "O"
+        check("X");
     }
     else if(startwith == "O" && box22.innerHTML ==""){
         box22.innerHTML="O";
         gamearray[4] = "O"
         startwith = "X"
+        check("O")
     }
  });
 
@@ -84,11 +113,13 @@ box11.addEventListener("click", function(){
         box23.innerHTML="X";
         gamearray[5] = "X"
         startwith = "O"
+        check("X");
     }
     else if(startwith == "O" && box23.innerHTML ==""){
         box23.innerHTML="O";
         gamearray[5] = "O"
         startwith = "X"
+        check("O")
     }
  });
 
@@ -97,11 +128,13 @@ box11.addEventListener("click", function(){
         box31.innerHTML="X";
         gamearray[6] = "X"
         startwith = "O"
+        check("X");
     }
     else if(startwith == "O" && box31.innerHTML ==""){
         box31.innerHTML="O";
         gamearray[6] = "O"
         startwith = "X"
+        check("O")
     }
  });
  
@@ -110,11 +143,13 @@ box11.addEventListener("click", function(){
         box32.innerHTML="X";
         gamearray[7] = "X"
         startwith = "O"
+        check("X");
     }
     else if(startwith == "O" && box32.innerHTML ==""){
         box32.innerHTML="O";
         gamearray[7] = "O"
         startwith = "X"
+        check("O")
     }
  });
 
@@ -123,17 +158,23 @@ box11.addEventListener("click", function(){
         box33.innerHTML="X";
         gamearray[8] = "X"
         startwith = "O"
+        check("X");
     }
     else if(startwith == "O" && box33.innerHTML ==""){
         box33.innerHTML="O";
         gamearray[8] = "O"
         startwith = "X"
+        check("O")
     }
  });
 
  var reload = document.getElementById("reload")
 
  reload.addEventListener("click", function(){
+    for(let i = 0; i < gamearray.length; i++) {
+        gamearray[i] = "-";
+    }
+    title.innerHTML = "TICTACTOE";
     box11.innerHTML="";
     box12.innerHTML="";
     box13.innerHTML="";
@@ -146,9 +187,11 @@ box11.addEventListener("click", function(){
     box32.innerHTML="";
     box33.innerHTML="";
 
+
+    
+
     
  })
 
- if(gamearray[0] == "X" && gamearray[1] == "X" && gamearray[2] == "X" ){
-    window.alert("X hat gewonnen");
- }
+
+
