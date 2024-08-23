@@ -175,6 +175,7 @@ box11.addEventListener("click", function(){
     for(let i = 0; i < gamearray.length; i++) {
         gamearray[i] = "-";
     }
+    winn = false;
     title.innerHTML = "TICTACTOE";
     box11.innerHTML="";
     box12.innerHTML="";
