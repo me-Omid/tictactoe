@@ -145,4 +145,10 @@ box11.addEventListener("click", function(){
     box31.innerHTML="";
     box32.innerHTML="";
     box33.innerHTML="";
+
+    
  })
+
+ if(gamearray[0] == "X" && gamearray[1] == "X" && gamearray[2] == "X" ){
+    window.alert("X hat gewonnen");
+ }
