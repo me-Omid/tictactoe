@@ -20,7 +20,7 @@ box11.addEventListener("click", function(){
         gamearray[0] = "X"
         startwith = "O"
     }
-    else{
+    else if(startwith == "O" && box11.innerHTML ==""){
         box11.innerHTML="O";
         gamearray[0] = "O"
         startwith = "X"
@@ -28,12 +28,12 @@ box11.addEventListener("click", function(){
  });
 
  box12.addEventListener("click", function(){ 
-    if(startwith == "X" && box11.innerHTML ==""){
+    if(startwith == "X" && box12.innerHTML ==""){
         box12.innerHTML="X";
         gamearray[1] = "X"
         startwith = "O"
     }
-    else{
+    else if(startwith == "O" && box12.innerHTML ==""){
         box12.innerHTML="O";
         gamearray[1] = "O"
         startwith = "X"
@@ -41,12 +41,12 @@ box11.addEventListener("click", function(){
  });
 
  box13.addEventListener("click", function(){ 
-    if(startwith == "X" && box11.innerHTML ==""){
+    if(startwith == "X" && box13.innerHTML ==""){
         box13.innerHTML="X";
         gamearray[2] = "X"
         startwith = "O"
     }
-    else{
+    else if(startwith == "O" && box13.innerHTML ==""){
         box13.innerHTML="O";
         gamearray[2] = "O"
         startwith = "X"
@@ -54,12 +54,12 @@ box11.addEventListener("click", function(){
  });
 
  box21.addEventListener("click", function(){ 
-    if(startwith == "X" && box11.innerHTML ==""){
+    if(startwith == "X" && box21.innerHTML ==""){
         box21.innerHTML="X";
         gamearray[3] = "X"
         startwith = "O"
     }
-    else{
+    else if(startwith == "O" && box21.innerHTML ==""){
         box21.innerHTML="O";
         gamearray[3] = "O"
         startwith = "X"
@@ -67,12 +67,12 @@ box11.addEventListener("click", function(){
  });
 
  box22.addEventListener("click", function(){ 
-    if(startwith == "X" && box11.innerHTML ==""){
+    if(startwith == "X" && box22.innerHTML ==""){
         box22.innerHTML="X";
         gamearray[4] = "X"
         startwith = "O"
     }
-    else{
+    else if(startwith == "O" && box22.innerHTML ==""){
         box22.innerHTML="O";
         gamearray[4] = "O"
         startwith = "X"
@@ -80,12 +80,12 @@ box11.addEventListener("click", function(){
  });
 
  box23.addEventListener("click", function(){ 
-    if(startwith == "X" && box11.innerHTML ==""){
+    if(startwith == "X" && box23.innerHTML ==""){
         box23.innerHTML="X";
         gamearray[5] = "X"
         startwith = "O"
     }
-    else{
+    else if(startwith == "O" && box23.innerHTML ==""){
         box23.innerHTML="O";
         gamearray[5] = "O"
         startwith = "X"
@@ -93,12 +93,12 @@ box11.addEventListener("click", function(){
  });
 
  box31.addEventListener("click", function(){ 
-    if(startwith == "X" && box11.innerHTML ==""){
+    if(startwith == "X" && box31.innerHTML ==""){
         box31.innerHTML="X";
         gamearray[6] = "X"
         startwith = "O"
     }
-    else{
+    else if(startwith == "O" && box31.innerHTML ==""){
         box31.innerHTML="O";
         gamearray[6] = "O"
         startwith = "X"
@@ -106,12 +106,12 @@ box11.addEventListener("click", function(){
  });
  
  box32.addEventListener("click", function(){ 
-    if(startwith == "X"){
+    if(startwith == "X" && box32.innerHTML ==""){
         box32.innerHTML="X";
         gamearray[7] = "X"
         startwith = "O"
     }
-    else{
+    else if(startwith == "O" && box32.innerHTML ==""){
         box32.innerHTML="O";
         gamearray[7] = "O"
         startwith = "X"
@@ -119,12 +119,12 @@ box11.addEventListener("click", function(){
  });
 
  box33.addEventListener("click", function(){ 
-    if(startwith == "X"){
+    if(startwith == "X" && box33.innerHTML ==""){
         box33.innerHTML="X";
         gamearray[8] = "X"
         startwith = "O"
     }
-    else{
+    else if(startwith == "O" && box33.innerHTML ==""){
         box33.innerHTML="O";
         gamearray[8] = "O"
         startwith = "X"
